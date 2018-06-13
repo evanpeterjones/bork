@@ -25,7 +25,10 @@ public class bork {
     }
 
     public void run() throws IOException {
-
+        for (int i = 0; i < height; i++)
+            for (int j = 0; j < width; j++)
+                getARGBfromPixel(pic.getRGB(i, j));
+                newPic.se
         ImageIO.write(newPic, "jpg", output);
     }
 
